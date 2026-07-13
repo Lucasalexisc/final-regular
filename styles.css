@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+/* Estilos de la navbar */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    position: relative;
+}
+
+.logo {
+    height: 120px;
+    width: 100px;
+    justify-self: flex-start;
+    padding-left: 24px;
+}
+
+nav ul {
+    display: flex;
+
+    z-index: 10;
+    width: 100vw;
+    height: 48px;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+li {
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+    height: 48px;
+    padding: 0 32px;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(195, 101, 22);
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.flexNav {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    gap: 8px;
+}
+
+main {
+    margin-top: 48px;
+}
+
+.redes {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: coral;
+}
+
+/* Fin de estilos de navar */
+/* .banner {
+    width: 100vw;
+    height: auto;
+    position: relative;
+} */
+
+
+/* Sección Hero para el banner */
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./media/banner-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+
+}
+
+/* Para el texto del medio + el button de donar */
+.text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    gap: 15px;
+}
+
+.text_container h1 {
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.text_container h2 {
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.donar {
+    height: 60px;
+    width: 180px;
+    color: white;
+    background-color: coral;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.calculator-card {
+    height: 300px;
+    width: 300px;
+}
+
+/* seccion de vieo */
+.white-section {
+    background-color: #ffffff;
+    color: #333333;
+    width: 100vw;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    max-width: 900px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+}
+
+.video-container h2 {
+    font-size: 2.5rem;
+    color: rgb(195, 101, 22);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.content-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555555;
+}
+
+
+.video {
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Seccion donde va el video + texto */
+.video-section {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+}
+
+
+/* seccion del formulario */
+.form_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    background-color: coral;
+}
+
+.form_container {}
+
+.white_section_2 {
+    background-color: #ffffff;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+
+}
+
+.text_section_2 {
+    display: block;
+    padding: 50px 50px;
+    height: 20%;
+    width: 50%;
+
+}
+
+.text_section_2 h1 {
+    color: coral;
+}
+
+.text_section_2 h2 {
+    color: #555555;
+}
+
+.text_section_2 p {
+    color: grey;
+}
+
+/* seccion calculadora */
+.calculator-container {
+    background-color: #071d49;
+}
+
+/* seccion de contacto */
+
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.info-column {
+    flex: 1;
+}
+
+.info-column h1 {
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-color: coral;
+}
+
+.info-heading {
+    font-size: 2rem;
+    color: #071d49;
+    margin-bottom: 20px;
+}
+
+.info-paragraph {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.legal-info {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    font-weight: bold;
+    color: coral;
+}
+
+.info-socials h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-buttons img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: coral;
+    padding: 6px;
+}
+
+.form-column {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 30px 20px;
+}
+
+.form-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #071d49;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.btn-submit-contact {
+    background-color: coral;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.btn-submit-contact:hover {
+    background-color: #e05a36;
+}
+
+/* footer */
+
+
+.footer {
+    background-color: #071d49;
+    color: white;
+    padding: 40px 20px 20px;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 30px;
+}
+
+.footer-info {
+    max-width: 400px;
+}
+
+.footer-info h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-links ul a {
+    color: #ccc;
+}
+
+.footer-links ul a:hover {
+    color: coral;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    color: #ccc;
+    font-size: 0.85rem;
+}

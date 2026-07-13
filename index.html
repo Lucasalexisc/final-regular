@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Regular</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <img src="./media/logo.png" alt="" class="logo">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Propósito</a></li>
+                    <li><a href="#">Donar</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Baja</a></li>
+                    <li><a href="#"><img src="./media/instagram.png" alt="" class="redes"></a></li>
+                    <li><a href="#"><img src="./media/facebook.png" alt="" class="redes"></a></li>
+                    <li><a href="#"><img src="./media/whatsapp.png" alt="" class="redes"></a></li>
+                    <button onclick="abrirMenu()">X</button>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Seccion para el texto del medio -->
+        <section class="hero">
+            <div class="text_container">
+                <h1>Sumate</h1>
+                <h2>Ayudanos a seguir fortaleciendo<br>mas de 500 ONGs de Argentina</h2>
+                <button class="donar">Donar</button>
+            </div>
+        </section>
+
+        <!-- Seccion video -->
+        <section class="white-section">
+            <div class="video-container">
+                <div>
+                    <h2>Donar Ayuda</h2>
+                    <p class="video_text">Completá tus datos y ayudá de manera simple y segura
+                        Así contribuís a que podamos seguir acompañando a personas vulnerables, junto a organizaciones
+                        sociales
+                        de todo el país.</p>
+                </div>
+
+                <video src="./media/video.mp4" controls muted class="video"></video>
+
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="calculator-container">
+                <div class="calculator-card">
+                    <h2 class="calc-title">TU APORTE</h2>
+
+                    <!-- Frecuencia  -->
+                    <div class="calc-frequency">
+                        <button type="button" class="freq-btn active" id="btn-once" data-freq="once">Por Única
+                            Vez</button>
+                        <button type="button" class="freq-btn" id="btn-monthly" data-freq="monthly">Mensual</button>
+                    </div>
+
+                    <!-- Botones de montos rápidos -->
+                    <div class="calc-amounts">
+                        <button type="button" class="amount-btn active" data-amount="10000">$ 10.000</button>
+                        <button type="button" class="amount-btn" data-amount="30000">$ 30.000</button>
+                        <button type="button" class="amount-btn" data-amount="50000">$ 50.000</button>
+                        <button type="button" class="amount-btn" data-amount="75000">$ 75.000</button>
+                    </div>
+
+
+                    <!-- Mensaje -->
+                    <div class="calc-impact-box">
+                        <p class="calc-impact-text" id="impact-message">
+                            Acompañá los primeros pasos de una ONG en Fundación Potenciar Solidario.
+                        </p>
+                    </div>
+
+                    <!-- Términos y condiciones -->
+                    <div class="calc-terms">
+                        <label>
+                            <input type="checkbox" id="accept-terms">
+                            Acepto que actualicen automáticamente mi donación, estos <a href="#"
+                                class="terms-link">Términos y Condiciones</a>.
+                        </label>
+                    </div>
+
+                    <!-- Botón siguiente -->
+                    <button type="button" class="btn btn-submit-calc" id="btn-next-calc">Siguiente</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="white_section_2">
+            <div class="contact-container">
+                <!--para la parte de la izquierda-->
+                <div class="info-column">
+                    <h1 class="text_section_2">MISIÓN</h1>
+                    <h2 class="info-heading">Fundación Potenciar Solidario</h2>
+                    <p class="info-paragraph">
+                        En Fundación Potenciar Solidario somos articuladores con impacto social. Acompañamos el
+                        fortalecimiento de ONGs en su gestión diaria, comunicación institucional, voluntariado y
+                        desarrollo de fondos, con el objetivo de que puedan lograr un crecimiento sustentable con foco
+                        social.
+                    </p>
+                    <p class="info-paragraph">
+                        Y así, cumplimos nuestro sueño de ayudar a las personas en situación de vulnerabilidad a
+                        recuperar su dignidad. Sumate para transformar.
+                    </p>
+
+                    <div class="legal-info">
+                        <p>📍 Las donaciones a Fundación Potenciar Solidario son <br> deducibles del impuesto a las
+                            ganancias
+                            (art 81c) - Argentina</p>
+                    </div>
+
+                    <div class="contact-details">
+                        <a href="tel:+541128734419" class="contact-link">📞 11 2873-4419</a>
+                        <a href="tel:+541128734419" class="contact-link">📞 11 2873-4419</a>
+                        <a href="https://www.potenciarsolidario.org" target="_blank" rel="noopener"
+                            class="contact-link">🌐
+                            www.potenciarsolidario.org</a>
+                    </div>
+
+                    <div class="info-socials">
+                        <h3>Redes Sociales</h3>
+                        <div class="social-buttons">
+                            <a href="#" aria-label="WhatsApp"><img src="media/whatsapp.png" alt="WhatsApp"></a>
+                            <a href="#" aria-label="Instagram"><img src="media/instagram.png" alt="Instagram"></a>
+                            <a href="#" aria-label="Facebook"><img src="media/facebook.png" alt="Facebook"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- formulario -->
+                <div class="form-column">
+                    <h2 class="form-heading">FORMULARIO DE CONTACTO</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name"></label>
+                            <input type="text" id="contact-name" name="name" placeholder="Nombre">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email"></label>
+                            <input type="email" id="contact-email" name="email" placeholder="E-mail">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-phone"></label>
+                            <input type="tel" id="contact-phone" name="phone" placeholder="Celular">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message"></label>
+                            <textarea id="contact-message" name="message" rows="5" placeholder="Tu mensaje"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit-contact">ENVIAR MENSAJE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Info Donación -->
+                <div class="footer-info">
+                    <h3>Donamos.org</h3>
+                    <p>Formulario Seguro provisto por Donamos.org, bajo los más estrictos controles de seguridad.</p>
+                </div>
+
+                <!-- Links Sitemap -->
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="https://www.donamos.org" target="_blank" rel="noopener">donamos.org</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright y Flecha Volver Arriba -->
+            <div class="footer-bottom">
+                <p>Copyright &copy; MMXXVI Donamos.org | Design by Vilagos</p>
+            </div>
+
+        </footer>
+</body>
+
+</html>
