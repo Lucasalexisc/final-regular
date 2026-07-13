@@ -32,7 +32,8 @@ nav {
 
 nav ul {
     display: flex;
-
+    position: fixed;
+    top: 0;
     z-index: 10;
     width: 100vw;
     height: 48px;
